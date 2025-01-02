@@ -1,3 +1,6 @@
+// This is an attempt of creating a Notes thingy that should allow me to take notes and remeber them.
+// It is also supposed to have a "Horários" tab that should let me customize my day-to-day thingy
+
 const horContainer = document.querySelector(".hor-container");
 const createBtn = document.querySelector(".btn");
 let hor = document.querySelectorAll(".input-box");
@@ -28,3 +31,11 @@ horContainer.addEventListener("click", function(e){
         })
     }
 })
+
+//Now we will attempt to make the Day change automatically
+
+// Playtime
+
+let day = document.querySelector(".day");
+day = "02";
+console.log(day);
