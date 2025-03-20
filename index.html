@@ -13,29 +13,58 @@
         <!-- Dia, Horário, clima e fase da Lua, com animações-->
         <div id="bubble">
             <p class="day"></p>
-            <p>January 2nd, 2024</p>
-            <p>18:01</p>
+            <p id="datetime"></p>
+            <p id="weekday"></p>
             <p>Cloudy</p>
             <p>New Moon in Aquarius</p>
         </div>
-        <img src="https://i.pinimg.com/736x/1d/50/75/1d5075419e06e9dd9e9a8e5a0d1935b4.jpg">
+
+        <div>
+            <audio controls>
+                <source src="./audio/Iframe [Karaoke] _Lonely in Gorgeous_ by Tommy February6 [T8AeHt5IShI].mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <img src="./imgs/heart-pink2.png" alt="Imagem de coração">
+
         <!-- "boa tarde", "boa noite", "bom dia" baseado na hora do dia -->
         <div class="txt">Boa tarde!</div>
         <div class="lin"></div>
         <div class="lin"></div>
+
         <!-- Uma quote random entre 5 opções-->
         <div>
         <p>"Na vida, temos que arriscar!</p></div>
-        <div class="container">
-            <h1>Horários</h1>
-            <button class="btn">Clique aqui</button>
-            <div class="hor-container">
-                <!-- <p contenteditable="true" class="input-box"></p> -->
+
+        <!-- Lista de Afazeres -->
+        <div id="mid">
+            <div class="afazeres">
+                <h1>Afazeres</h1>
+                <div>
+                    <button class="btn">Crie uma tarefa</button><button class="clear">Clear</button>
+                </div>                
+                <div class="hor-container">
+                    <!-- <p contenteditable="true" class="input-box">
+                        <img src="./imgs/delete.png" alt="deletar">
+                    </p> -->
+                </div>
+            </div>
+            <div class="img-box">
+                <img id="chibi-pic" src="./imgs/raf,360x360,075,t,fafafa_ca443f4786.jpg" alt="Imagem ilustrativa">
+            </div>
+        </div>
+
+        <!-- Vídeo do YouTube -->
+        <div class="separation"></div>
+        <div>
+            <iframe width="420" height="300" src="https://www.youtube.com/embed/TS4o0Tssd60?si=1kL4dDiCrY1dvA0p" title="YouTube video player" frameborder="3px" border-radius="5px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </div>
 
-<script src="script.js"></script>
-
 </body>
+
+<script src="script.js"></script>
+<script src="scriptdate.js"></script>
 </html>

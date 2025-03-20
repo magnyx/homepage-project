@@ -1,41 +1,62 @@
-// This is an attempt of creating a Notes thingy that should allow me to take notes and remeber them.
-// It is also supposed to have a "Horários" tab that should let me customize my day-to-day thingy
+// This is an attempt of creating a Notes thingy that should allow me to take notes and remember them.
+// It is also supposed to have a "Afazeres" tab that should let me customize my day-to-day thingy
 
 const horContainer = document.querySelector(".hor-container");
 const createBtn = document.querySelector(".btn");
 let hor = document.querySelectorAll(".input-box");
 
-function showHor(){
+function showHor() {
     horContainer.innerHTML = localStorage.getItem("hor");
+    reattachEventListeners();
 }
 showHor();
 
-function updateStorage(){
+function updateStorage() {
     localStorage.setItem("hor", horContainer.innerHTML);
 }
 
-createBtn.addEventListener("click", ()=>{
+function reattachEventListeners() {
+    hor = document.querySelectorAll(".input-box");
+    hor.forEach(nt => {
+        nt.onkeyup = function () {
+            updateStorage();
+        }
+    });
+}
+
+createBtn.addEventListener("click", () => {
     let inputBox = document.createElement("p");
+    let img = document.createElement("img");
     inputBox.className = "input-box";
     inputBox.setAttribute("contenteditable", "true");
-    horContainer.appendChild(inputBox);
+    img.src = "./imgs/heart-pink2.png";
+    horContainer.appendChild(inputBox).appendChild(img);
+    reattachEventListeners();
 })
 
 horContainer.addEventListener("click", function(e){
-    if(e.target.tagName === "P"){
-        hor = document.querySelectorAll(".input-box");
-        hor.forEach(nt => {
-            nt.onkeyup = function(){
-                updateStorage
-            }
-        })
+    if(e.target.tagName === "IMG"){
+        e.target.parentElement.remove();
+        updateStorage();
+    }
+    else if(e.target.tagName === "P"){
+       reattachEventListeners();
     }
 })
 
-//Now we will attempt to make the Day change automatically
+document.addEventListener("keydown", event => {
+    if(event.key === "Enter"){
+        event.preventDefault();
+        const br = document.createElement("br");
+        const selection = window.getSelection();
+        const range = selection.getRangeAt(0);
+        range.deleteContents();
+        range.insertNode(br);
+        range.setStartAfter(br);
+        range.setEndAfter(br);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+})
 
-// Playtime
-
-let day = document.querySelector(".day");
-day = "02";
-console.log(day);
+showHor();
