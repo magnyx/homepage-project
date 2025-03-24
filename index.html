@@ -10,76 +10,85 @@
 
 <div id="background">
     <div class="border">
-            <!-- Dia, Horário, clima e fase da Lua, com animações-->
-            <div id="bubble">
+        <!-- Primeira linha, com Dia, Horário, clima, animações e a bonequinha no topo da tela-->
+        <div id="bubble">
+            <div id="juh">Juh!</div>
+            <div>
                 <p class="day"></p>
                 <p id="datetime"></p>
                 <p id="weekday"></p>
                 <p>Cloudy</p>
-                <p>New Moon in Aquarius</p>
-            </div>
-
-
-            <img src="./imgs/1920x1080 homepage-project-design-doll.png" id="imagem-nuvem" alt="">
-
-            
-            <div>
-                <audio controls>
-                    <source src="./audio/Iframe [Karaoke] _Lonely in Gorgeous_ by Tommy February6 [T8AeHt5IShI].mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <!-- Imagem de fundo de nuvens 
-            <div><img id="clouds" src="./imgs/1920x1080 homepage-project-design-backgroundnotflat.png" alt="clouds"></div>-->
-
-            <img src="./imgs/heart-pink2.png" alt="Imagem de coração">
-
-            <!-- "boa tarde", "boa noite", "bom dia" baseado na hora do dia -->
-            <div class="txt">Boa tarde!</div>
-            <div class="lin"></div>
-            <div class="lin"></div>
-
-            <!-- Uma quote random entre 5 opções-->
-            <div>
-            <p>"Na vida, temos que arriscar!</p></div>
-    </div>             
-        <!-- Lista de Afazeres -->
-        <div id="mid">
-            <!-- lista de desejos -->
-            <div class="afazeres">
-                <h1>Lista de desejos</h1>
-                <div id="lista-de-desejos"></div>
-            </div>
-            <!-- imagem da lily -->
-            <div class="img-box">
-                <img id="chibi-pic" src="./imgs/raf,360x360,075,t,fafafa_ca443f4786.jpg" alt="Imagem ilustrativa">
-            </div>
-            <!-- lista de tarefas -->
-            <div class="afazeres">
-                <h1>Afazeres</h1>
-                <div id="afazeres-button-container">
-                    <button class="btn">Crie uma tarefa</button>
-                    <button class="clear">Clear</button>
-                </div>                
-                <div class="hor-container">
-                    <!-- <p contenteditable="true" class="input-box">
-                        <img src="./imgs/delete.png" alt="deletar">
-                    </p> -->
-                </div>
             </div>
         </div>
+        <img src="./imgs/1920x1080 homepage-project-design-doll.png" id="imagem-nuvem" alt="bonequinha voadora">
 
+        <!-- Segunda linha, com Boa tarde, uma quote random e Player mp3-->
+        <div class="second-line">
+            <!-- "boa tarde", "boa noite", "bom dia" baseado na hora do dia -->
+            <div class="txt">
+                <img src="./imgs/heart-pink2.png" alt="Imagem de coração">
+                <p>Boa tarde!</p>
+            </div>
+            <!-- Uma quote random entre 5 opções-->
+            <div class="citation-container">
+                <div id="citation">
+                    <q>Na vida, temos que arriscar!</q>
+                    <cite>J.V.C.</cite>
+                </div>
+                <div id="citation-underline"></div>
+            </div>
+            <!--MP3 Player-->
+            <div class="mp3-player">
+                <audio controls>
+                    <source src="./audio/Iframe [Karaoke] _Lonely in Gorgeous_ by Tommy February6 [T8AeHt5IShI].mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+        
+        <!-- As tres Listas -->
+        <div id="terceira-linha">
+            <!-- lista de desejos -->
+            <div class="lista">
+                <h2>Lista de desejos!</h>
+                <div id="lista-de-desejos"></div>
+                <button class="btn-desejos">Novo</button>
+                <button class="clear-desejos">Clear</button>
+            </div>
+            <!-- imagem da lily -->
+            <div id="lista-imagens">
+                <div class="img-box">
+                    <img id="chibi-pic" src="./imgs/raf,360x360,075,t,fafafa_ca443f4786.jpg" alt="Imagem ilustrativa">
+                    <img id="chibi-pic" src="./imgs/ddfd17385028891f534154d9ea61243c.jpg" alt="Imagem ilustrativa">
+                    <img id="chibi-pic" src="./imgs/Sawako.PNG.png" alt="Imagem ilustrativa">
+                    <img id="chibi-pic" src="./imgs/the-lovely-brave-and-courageous-sailor-mars-from-sailor-moon-4buewcpgurv9p7xi.jpg" alt="Imagem ilustrativa">
+                </div>
+            </div>
+            <!-- lista de tarefas -->
+            <div class="lista">
+                <h2> Lista de Tarefas!</h2>
+                <div class="hor-container">
+                    <!-- <p contenteditable="true" class="input-box">
+                        <img src="./imgs/delete.png" class="botao-delete" alt="deletar">
+                    </p>
+                         -->
+                </div>      
+                <button class="btn">Novo</button>
+                <button class="clear">Clear</button>          
+            </div>
+        </div>
+        <div id="cinema-da-lily">
+            <div class="video-container">
+                <iframe class="yt-video" src="https://www.youtube.com/embed/TS4o0Tssd60?si=1kL4dDiCrY1dvA0p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="yt-video" src="https://www.youtube.com/embed/H9bwKyhqZn0" title="Magical Sounds for Creative Inspiration and Focus 🎻🦉✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="yt-video" src="https://www.youtube.com/embed/pcLgYRFlNRc" title="songs that will make you feel like a princess (classical, enchanting orchestra)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="yt-video" src="https://www.youtube.com/embed/IYKf2MyQfWM" title="Pride &amp; Prejudice | Peaceful Music &amp; Ambience - 3 Iconic Scenes from the 2005 Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div> 
 </div>
 
-<div id="cinema-da-lily">
-    <div class="video-container">
-        <iframe class="yt-video" src="https://www.youtube.com/embed/TS4o0Tssd60?si=1kL4dDiCrY1dvA0p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe class="yt-video" src="https://www.youtube.com/embed/H9bwKyhqZn0" title="Magical Sounds for Creative Inspiration and Focus 🎻🦉✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe class="yt-video" src="https://www.youtube.com/embed/pcLgYRFlNRc" title="𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 | songs that will make you feel like a princess (classical, enchanting orchestra)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe class="yt-video" src="https://www.youtube.com/embed/IYKf2MyQfWM" title="Pride &amp; Prejudice | Peaceful Music &amp; Ambience - 3 Iconic Scenes from the 2005 Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</div>    
+   
 
 
 </body>

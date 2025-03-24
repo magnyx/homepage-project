@@ -32,7 +32,7 @@ createBtn.addEventListener("click", () => {
     let img = document.createElement("img");
     inputBox.className = "input-box";
     inputBox.setAttribute("contenteditable", "true");
-    img.src = "./imgs/heart-pink2.png";
+    img.src = "./imgs/delete.png";
     horContainer.appendChild(inputBox).appendChild(img);
     reattachEventListeners();
 })

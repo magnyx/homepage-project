@@ -1,10 +1,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(0deg, #f0ffff,#7adbdb);
+    background: linear-gradient(0deg, #f0ffff,#897adb);
+    /* background-image: url(./imgs/1920x1080\ homepage-project-design-backgroundonlyclouds.png); */
     background-repeat: repeat;
     width: 100%;
     height: 930px;
-    margin: 0;
+    margin: 3% 0 0 0;
     padding: 0;
 
 }
@@ -18,16 +19,6 @@ body {
     padding: 0;
 }
 
-#clouds {
-    display:block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .border {
     margin: 0 60px 0 60px;
     border: 0;
@@ -36,13 +27,48 @@ body {
 }
 
 #bubble {
-    background-color: #adfff8;
-    width:300px;
+    background-color: rgb(227, 218, 255);
+    width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: #333 dotted 3px;
+    border: rgb(196, 188, 220) solid 9px;
     text-align: center;
     align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bubble>div>p {
+    font-family: cursive;
+    font-size: 21px;
+    margin-top: 10px;
+    line-height: 0.6;
+}
+
+#bubble>div#juh {
+    font-size: 90px;
+    font-family: "Miracode", cursive;
+    src: url(./fonts/miracode/Miracode.ttf) format("truetype");
+    font-weight: 800;
+    font-style: italic;
+    color: c;
+    line-height: 1;
+}
+
+#imagem-nuvem {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: auto;
+    height: 300px;
+    border: 0;
+}
+
+.second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 img {
@@ -51,86 +77,170 @@ img {
 }
 
 .txt {
-    border-bottom: 3px aqua;
-    color: blue;
+    color: rgb(150, 61, 90);
+    font-family: monospace;
+    font-size: 21px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
 
-.afazeres {
+.txt>p {
+    margin-left: 3%;
+    justify-content: center;
+    width: fit-content;
+}
+
+#citation-container {
+    max-height: fit-content;
+    padding: 30px;
+    margin-bottom: 10px;
+    align-content: flex-end;
+    align-self: flex-end;
+    flex: 1 1 600px;
+    flex-direction: row-reverse;
+
+}
+div#citation {
+    background-color: #f0ffff;
+    max-width: 300px;
+    max-height: fit-content;
+    padding: 18px;
+    margin: 0 12px 0 12px;
+}
+#citation>q {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+#citation-underline {
+    background-color: rgb(150, 61, 90);
+    border-radius: 12px;
+    width: 330px;
+    height: 9px;
+    margin: 0px 0 30px 0;
+    overflow: visible;
+}
+.mp3-player {
+    justify-content: right;
+}
+
+
+#terceira-linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.lista {
     width: 100%;
-    min-height: 100px;
+    min-height: 390px;
     max-height: 300px;
-    max-width: 450px;
-    padding: 4%;
-    background-color: rgb(195, 231, 238);
+    max-width: 360px;
+    padding: 9px;
+    background-color: rgb(225, 137, 175);
+    border: rgb(227, 218, 255) 9px solid;
     border-radius: 9px;
 }
-
-.btn{
-    padding: 6px;
+.lista>h2 {
+    font-family: cursive;
+    font-size: 21px;
 }
 
-.afazeres.hor-container {
+#lista-imagens {
+    align-self: center;
+    min-width: 600px;
+    max-width: 54%;
+    height: fit-content;
+    background-color: rgb(199,171,227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(227, 218, 255) 6px solid;
+    padding: 12px;
+    border-radius: 9px;
+    gap: 9px;
+}
+.img-box {
+    padding: 0px 10px 0px 10px;
+}
+
+#chibi-pic {
+    /* Object-fit:cover eh extremamente importante para a imagem ficar cortatinha, ao inves de ficar aquele zoom zuado quando ela passar das medidas requeridas */
+    object-fit: cover;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 20px;
+}
+img#chibi-pic:active {
+    transform: scale(2);
+    transition: transform .6s;
+}
+
+button {
+    padding: 6px;
+    font-weight: bold;
+    background-color: rgb(227, 218, 255);
+    border: rgb(68, 33, 241) solid 1px;
+    border-radius: 2px;
+}
+
+.hor-container {
     width: 300px;
     height: 180px;
-    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding: 0;
 }
 
 .input-box {
     position: relative;
     width: 100%;
-    max-width: 200px;
-    min-height: 150px;
-    background: #f0ffff;
+    max-width: 250px;
+    min-height: 100px;
+    background: rgb(227, 218, 255);
     color:#333;
-    padding: 20px 0;
+    padding: 5px;
     outline: none;
     border-radius: 5px;
 }
 
-#mid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.img-box {
-    justify-self: flex-end;
-    padding: 0px 10px 0px 10px;
-}
-
-#chibi-pic {
-    height: auto;
-    width: auto;
-    border-radius: 20px;
-}
-
-
-#imagem-nuvem {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    width: auto;
-    height: 400px;
-    border: 0;
+.botao-delete {
+    justify-self: end;
+    align-self: end;
+    top: 45%;
+    right: 45%;
+    width: 5px;
+    height: 5px;
 }
 
 #cinema-da-lily {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    gap: 0;
-    margin: 10px;
+    align-content: space-evenly;
+    margin: 3px;
+    background-color: rgba(68, 33, 241, 0.3);
+    height: auto;
+    justify-self: center;
+    width: 100%;
 }
 
 .video-container {
-    border: 10px groove black;
+    border: 3px dashed rgb(196, 188, 220);
+    border-radius: 18px;
     display: flex;
     width: fit-content;
-    align-self: center;
+    align-self: flex-end;
+    gap: 5px;
     margin: 10px;
 }
 
 .yt-video {
-    width: 300px;
-    height: 200px;
+    width: 125px;
+    height: 90px;
+    border-radius: 20px;
+
 }
