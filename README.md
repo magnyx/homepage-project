@@ -1,6 +1,7 @@
 # homepage-project
 
 ### Criar uma homepage que seja confortável, bonita e inspiradora para mim!
+### Usar um tema voltado para Pixel Art
 
 1. Criar design e colocar por escrito partes mais importantes do projeto
     1.1. Partes mais importantes:
@@ -17,6 +18,9 @@
     1.2. Se possível:
     - Mapa do céu no momento e meu mapa atual, do dia
     - Adicionar caixinhas com links diretos para as melhores músicas do Youtube 
+    - Fazer o céu mudar de acordo com a hora do dia: manhã, meio-dia, entardecer, noite. 
+        (Possível easter egg de Lua Sangrenta e Eclipses Solares e Lunares)
+    - Adicionar gamification, com personagem, niveis, quests etc
 
     1.3. A decidir:
     - Paleta de cores principais;
