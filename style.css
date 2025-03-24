@@ -96,10 +96,7 @@ img {
     max-height: fit-content;
     padding: 30px;
     margin-bottom: 10px;
-    align-content: flex-end;
-    align-self: flex-end;
-    flex: 1 1 600px;
-    flex-direction: row-reverse;
+    margin-left: auto;
 
 }
 div#citation {
@@ -142,9 +139,10 @@ div#citation {
     border: rgb(227, 218, 255) 9px solid;
     border-radius: 9px;
 }
-.lista>h2 {
+.lista h2 {
     font-family: cursive;
     font-size: 21px;
+    color: rgb(150, 61, 90);
 }
 
 #lista-imagens {
@@ -221,7 +219,7 @@ button {
     display: flex;
     flex-direction: column;
     align-content: space-evenly;
-    margin: 3px;
+    margin: 6px;
     background-color: rgba(68, 33, 241, 0.3);
     height: auto;
     justify-self: center;
@@ -240,7 +238,7 @@ button {
 
 .yt-video {
     width: 125px;
-    height: 90px;
+    height: 63px;
     border-radius: 20px;
 
 }

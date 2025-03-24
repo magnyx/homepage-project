@@ -1,5 +1,5 @@
 export function listaDeDesejos () {
-    let lista = ["Piano Casio Vermelho", "desejo 2"];
+    let lista = ["desejo 1", "desejo 2"];
 
 
     let mainContainer = document.getElementById('lista-de-desejos');
