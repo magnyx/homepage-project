@@ -8,12 +8,10 @@ Verificar iamgem do [Design](./imgs/1920x1080%20homepage-project-design.-fulljpg
 1. Criar design e colocar por escrito partes mais importantes do projeto
     1.1. Partes mais importantes:
     [Feito, descobrri como trocar a fonte]- Data, hora e dia da semana no céu!
-    - Lista de Desejos
-    - Lista de Afazeres;
+    - Lista de Desejos funcional
+    - Lista de Afazeres funcional;
     [Feito, pode melhorar]- Bonequinha balançando as pernas numa nuvem no alto, olhando para baixo;
-    [Feito, pode melhorar]- Quadradinhos com as fotinhos dos personagens que mais amo, abrindo em uma galeria com seleções das melhores fotos!
     - Hall da Fama dos desejos
-    - Coração no final da tela
     - Desafio dos desejos dos 30 dias aprimorado;
 
     1.2. Se possível:
@@ -22,6 +20,9 @@ Verificar iamgem do [Design](./imgs/1920x1080%20homepage-project-design.-fulljpg
     - Fazer o céu mudar de acordo com a hora do dia: manhã, meio-dia, entardecer, noite. 
         (Possível easter egg de Lua Sangrenta e Eclipses Solares e Lunares)
     - Adicionar gamification, com personagem, niveis, quests etc
+
+    1.3 Estético, opcional:
+    - Coração no final da tela
 
 2.  Implementar as coisas
 
