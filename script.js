@@ -1,8 +1,5 @@
 // This is an attempt of creating a Notes thingy that should allow me to take notes and remember them.
 // It is also supposed to have a "Afazeres" tab that should let me customize my day-to-day thingy
-import { listaDeDesejos } from "./lista-de-desejos.js";
-
-listaDeDesejos();
 
 const horContainer = document.querySelector(".hor-container");
 const createBtn = document.querySelector(".btn");

@@ -7,12 +7,8 @@ Verificar iamgem do [Design](./imgs/1920x1080%20homepage-project-design.-fulljpg
 
 1. Criar design e colocar por escrito partes mais importantes do projeto
     1.1. Partes mais importantes:
-    [Feito, descobrri como trocar a fonte]- Data, hora e dia da semana no céu!
-    - Lista de Desejos funcional
-    - Lista de Afazeres funcional;
-    [Feito, pode melhorar]- Bonequinha balançando as pernas numa nuvem no alto, olhando para baixo;
-    - Hall da Fama dos desejos
-    - Desafio dos desejos dos 30 dias aprimorado;
+    Resolver o problema de storage das informacoes que eu colocar
+    Resolver o problema das listas e com o javascript
 
     1.2. Se possível:
     - Mapa do céu no momento e meu mapa atual, do dia
