@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(0deg, #f0ffff,#897adb);
+    background: linear-gradient(0deg, #f0ffff,#6c6ee7);
     /* background-image: url(./imgs/1920x1080\ homepage-project-design-backgroundonlyclouds.png); */
     background-repeat: repeat;
     width: 100%;
@@ -208,6 +208,15 @@ button {
     padding: 5px;
     outline: none;
     border-radius: 5px;
+    display: flex;
+}
+
+.input-box img {
+    width: 21px;
+    height: 21px;
+    align-self: flex-end;
+    justify-self: right;
+    margin-left: auto;
 }
 
 .botao-delete {

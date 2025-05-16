@@ -1,13 +1,43 @@
-export function listaDeDesejos () {
-    let lista = ["desejo 1", "desejo 2"];
+const notesContainer = document.querySelector(".desejos-container");
+const createBtn = document.querySelector(".btn-desejos");
+let notes = document.querySelectorAll(".input-box");
 
-
-    let mainContainer = document.getElementById('lista-de-desejos');
-
-    lista.forEach(element => {
-        let itemLista = document.createElement('div');
-        itemLista.textContent = `${element}`;
-        mainContainer.appendChild(itemLista);
-    });   
-
+function showNotes(){
+    notesContainer.innerHTML = localStorage.getItem("notes");
 }
+showNotes();
+
+function updateStorage(){
+    localStorage.setItem("notes", notesContainer.innerHTML);
+}
+
+createBtn.addEventListener("click", ()=>{
+    let inputBox = document.createElement("p");
+    let img = document.createElement("img");
+    inputBox.className = "input-box";
+    inputBox.setAttribute("contenteditable", "true");
+    img.src = "imgs/delete.png";
+    notesContainer.appendChild(inputBox).appendChild(img);
+})
+
+notesContainer.addEventListener("click", function(e){
+    if(e.target.tagName === "IMG"){
+        e.target.parentElement.remove();
+        updateStorage();
+    }
+    else if(e.target.tagName === "P"){
+        notes = document.querySelectorAll(".input-box");
+        notes.forEach(nt => {
+            nt.onkeyup = function(){
+                updateStorage();
+            }
+        })
+    }
+})
+
+document.addEventListener("keydown", event =>{
+    if(event.key === "Enter"){
+        document.execCommand("insertLineBreak");
+        event.preventDefault();
+    }
+})
