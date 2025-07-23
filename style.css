@@ -228,6 +228,19 @@ button {
     height: 5px;
 }
 
+button {
+    margin: 3px;
+    border: #333 1px dashed;
+    border-radius: 6px;
+    padding: 9px;
+}
+
+button>a {
+    color: #897adb;
+    text-decoration: wavy;
+    border: #333;
+}
+
     /* Youtube */
 
 #cinema-da-lily {

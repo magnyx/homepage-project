@@ -77,6 +77,16 @@ h1 {
 button {
     width: fit-content;
     align-self: center;
+    margin: 3px;
+    border: #333 1px dashed;
+    border-radius: 6px;
+    padding: 9px;
+}
+
+button>a {
+    color: #897adb;
+    text-decoration: wavy;
+    border: #333;
 }
 
 blockquote {
