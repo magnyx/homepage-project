@@ -28,17 +28,14 @@ body {
 @font-face {
   font-family: 'dotty';
   src: url(../fonts/dotty/dotty.ttf);
-  font-weight:normal;
-  font-style:normal;
-  font-display: swap;
 }
 
 #bubble {
-    background-image: url(./imgs/moon.png);
-    background-size: 330px;
-    width: 360px;
-    height: 360px;
-    border-radius: 100%;
+    background-image: url(./imgs/moon1-opacityreduced.png);
+    background-repeat: no-repeat;
+    background-size: 399px;
+    width: 415px;
+    height: 415px;
     border: none;
     text-align: center;
     align-content: center;
@@ -49,7 +46,7 @@ body {
 
 #bubble>div>p {
     font-family: Miracode, cursive;
-    font-size: 21px;
+    font-size: 18px;
     margin-top: 10px;
     line-height: 0.6;
 }
