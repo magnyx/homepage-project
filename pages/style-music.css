@@ -1,0 +1,24 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(0deg, #f0ffff,#6c6ee7);
+    /* background-image: url(./imgs/1920x1080\ homepage-project-design-backgroundonlyclouds.png); */
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    margin: 3% 0 0 0;
+    padding: 0;
+}
+
+.music-container {
+    display: flex;
+    max-width: 66%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: #6c6ee7 solid 3px;
+    border-radius: 33px;
+    margin: auto;
+}
+
+.music-sheet {
+}
