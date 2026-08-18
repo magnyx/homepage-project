@@ -34,11 +34,12 @@ body {
 }
 
 #bubble {
-    background-color: #e3daff;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: rgb(196, 188, 220) solid 9px;
+    background-image: url(./imgs/moon.png);
+    background-size: 330px;
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+    border: none;
     text-align: center;
     align-content: center;
     display: flex;
