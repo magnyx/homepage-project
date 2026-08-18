@@ -1,9 +1,6 @@
 @font-face {
   font-family: 'dotty';
   src: url(../fonts/dotty/dotty.ttf);
-  font-weight:normal;
-  font-style:normal;
-  font-display: swap;
 }
 
 #audio-track {
@@ -19,9 +16,11 @@
     align-items: center;
     width: 190px;
     height: 150px;
-
-    background-color: rgb(150, 61, 90);
-    border-radius: 17px;
+    background: #E189AF;
+    background: radial-gradient(circle,rgba(225, 137, 175, 0.96) 0%, rgba(150, 61, 90, 0.84) 100%);
+    border-bottom: #e3daff solid;
+    border-right: #e3daff solid;
+    border-radius: 18px;
     padding: 18px;
 }
 
@@ -34,6 +33,8 @@
     max-width: 72px;
     border-radius: 0%;
     padding: 0;
+    border: 2px dotted #e3daff;
+    border-radius: 9%;
 }
 
 .song-title {
@@ -49,7 +50,8 @@
 
 #song-title-banner {
     font-family: 'dotty', cursive;
-    font-size: 21px;
+    font-size: 24px;
+    font-weight: bold;
     width: 120px;
     white-space: nowrap;
     animation: seamlessLoop 15s linear infinite;
@@ -83,7 +85,7 @@
 
 .progress-bar {
   -webkit-appearance: none;
-  appearance: none;  background: rgba(255, 255, 255, 0.3);
+  appearance: none;  background: #E189AF;
   outline: none;
   cursor: pointer;
   border-radius: 30px;
@@ -104,7 +106,7 @@
 
 .play-main {
     font-size: 12px;
-    background-color: black;
+    background-color: #963D5A;
     border-radius: 100%;
     padding: 15px;
 
@@ -116,14 +118,14 @@
   display: flex;
   justify-content: center;
   margin-top: 9px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(225, 137, 175, 0.05);
 }
 
 /* Grouping container to handle the hover area */
 .volume-wrapper {
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(225, 137, 175, 0.05);
   padding: 6px 12px;
   border-radius: 20px;
   cursor: pointer;

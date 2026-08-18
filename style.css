@@ -34,7 +34,7 @@ body {
 }
 
 #bubble {
-    background-color: rgb(227, 218, 255);
+    background-color: #e3daff;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -149,7 +149,7 @@ div#citation {
     max-height: 300px;
     max-width: 360px;
     padding: 9px;
-    background-color: rgb(225, 137, 175);
+    background-color: #e189af;
     border: rgb(227, 218, 255) 9px solid;
     border-radius: 9px;
 }
@@ -194,7 +194,7 @@ img#chibi-pic:active {
 button {
     padding: 6px;
     font-weight: bold;
-    background-color: rgb(227, 218, 255);
+    background-color: #e3daff;
     border: rgb(68, 33, 241) solid 1px;
     border-radius: 2px;
 }
