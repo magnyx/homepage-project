@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mp3</title>
+    <link rel="stylesheet" href="./mp3-player-style.css">
+</head>
+<body>
+    
+    <audio id="audio-track" src="../audio/Iframe [Karaoke] _Lonely in Gorgeous_ by Tommy February6 [T8AeHt5IShI].mp3"></audio>
+
+    <div class="mp3-container">
+        <div class="art-container">
+            <div class="art-cover">
+                <img src="../audio/art-cover/artworks-000580257125-13zi2x-t500x500.jpg" alt="art-cover">
+            </div>
+            <div class="song-title">
+                    <p id="song-title-banner">
+                        LONELY IN GORGEOUS - TOMMY FEBRUARY6
+                    </p>
+            </div>
+        </div>
+        
+        <div class="progress-container">
+            <input type="range" class="progress-bar" min="0" max="100" value="0">
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn" id="prev-btn">⏮</button>
+            <button class="control-btn play-main" id="play-btn"> ▶</button>
+            <button class="control-btn" id="next-btn">⏭</button>
+
+            <div class="volume-container">
+                <div class="volume-wrapper">
+                    <span class="volume-icon">🔊</span>
+                    <input type="range" class="volume-slider" min="0" max="100" value="21">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./mp3-player-play-stop-script.js"></script>
+<script src="./mp3-player-volume-script.js"></script>
+<script src="./mp3-player-progress-bar.js"></script>
+</html>

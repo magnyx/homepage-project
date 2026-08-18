@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'dotty';
+  src: url(../fonts/dotty/dotty.ttf);
+  font-weight:normal;
+  font-style:normal;
+  font-display: swap;
+}
+
+#audio-track {
+    display: none;
+}
+
+.mp3-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 190px;
+    height: 150px;
+
+    background-color: rgb(150, 61, 90);
+    border-radius: 17px;
+    padding: 18px;
+}
+
+.art-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.art-cover>img {
+    max-width: 72px;
+    border-radius: 0%;
+    padding: 0;
+}
+
+.song-title {
+    text-align: center;
+    justify-self: center;
+    margin-left: 9px;
+    color: aliceblue;
+    width: 200%;
+    display: flex;
+    overflow: hidden;
+    white-space-collapse: nowrap;
+}
+
+#song-title-banner {
+    font-family: 'dotty', cursive;
+    font-size: 21px;
+    width: 120px;
+    white-space: nowrap;
+    animation: seamlessLoop 15s linear infinite;
+}
+
+@keyframes seamlessLoop {
+  0% {transform: translateX(0); }
+  100% {transform: translateX(-100%); }
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.control-btn {
+    flex-shrink: 0;
+    flex-grow: 2;
+    background: none;
+    border: none;
+    font-size: larger;
+    padding: 9px;
+    color: aliceblue;
+}
+
+/* Timeline Custom Range Slider Styling */
+.progress-container {
+  margin: 0 9px 9px 9px;
+}
+
+.progress-bar {
+  -webkit-appearance: none;
+  appearance: none;  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/* Moving Thumb of Progress Bar */
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  background: #00adb5;
+  transition: transform 0.1s ease;
+}
+
+.progress-bar::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
+}
+
+.play-main {
+    font-size: 12px;
+    background-color: black;
+    border-radius: 100%;
+    padding: 15px;
+
+}
+
+/* Core volume wrapper */
+.volume-container {
+  align-self: right;
+  display: flex;
+  justify-content: center;
+  margin-top: 9px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Grouping container to handle the hover area */
+.volume-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.volume-icon {
+  font-size: 1rem;
+  color: var(--text-main);
+  user-select: none;
+}
+
+/* Hidden state for the volume bar */
+.volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0px;       /* Completely collapsed by default */
+  opacity: 0;       /* Invisible */
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  cursor: pointer;
+  /* Smooth transition for width and visibility */
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease; 
+  margin-left: 0;
+}
+
+/* Reveal when hovering over the container OR when JS adds the 'active' class */
+.volume-wrapper:hover .volume-slider,
+.volume-wrapper.active .volume-slider {
+  width: 80px;      /* Slides out to full length */
+  opacity: 1;       /* Becomes visible */
+  margin-left: 10px; /* Pushes away from the icon */
+}
+
+/* Custom Knob Styling */
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}

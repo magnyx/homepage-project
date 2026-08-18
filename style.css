@@ -25,6 +25,14 @@ body {
     flex-direction: column;
 }
 
+@font-face {
+  font-family: 'dotty';
+  src: url(../fonts/dotty/dotty.ttf);
+  font-weight:normal;
+  font-style:normal;
+  font-display: swap;
+}
+
 #bubble {
     background-color: rgb(227, 218, 255);
     width: 300px;
@@ -39,7 +47,7 @@ body {
 }
 
 #bubble>div>p {
-    font-family: cursive;
+    font-family: Miracode, cursive;
     font-size: 21px;
     margin-top: 10px;
     line-height: 0.6;
@@ -123,9 +131,11 @@ div#citation {
     overflow: visible;
 }
 .mp3-player {
-    justify-content: right;
+    height: 240px;
 }
-
+.mp3-player>iframe{
+    overflow: hidden;
+}
 
 #terceira-linha {
     display: flex;
