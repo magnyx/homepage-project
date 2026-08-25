@@ -3,9 +3,20 @@
 ### Criar uma homepage que seja confortável, bonita e inspiradora para mim!
 ### Usar um tema voltado para Pixel Art
 
-Verificar imagem do [Design](./imgs/1920x1080%20homepage-project-design.-fulljpg.jpg) para verificar o "plano".
+O que foi feito até agora:
+-   Implementado todo o design original [Design legado](./imgs/1920x1080%20homepage-project-design.-fulljpg.jpg)
+-   Resolvidos os problemas de storage
+-   MP3 música funcionando! So fun ~
+-   Bloco de notas funcionando!
 
-1. Criar design e colocar por escrito partes mais importantes do projeto
+Agora, vamos para o Design mais desenvolvido, pronto para abarcar novas features e com mais direcionamento. Observar [Design novo](./imgs/homepage-newdesign-rough-1.jpg)
+
+2. Colocar por escrito partes mais importantes do projeto & adicionais divertidos
+    0. Estrutura do site: 
+        - Uma visão panorâmica que dá para usar fullscreen normal
+        - Uma visão de box para ver no meu Noctalia Niri
+        - Uma visão de smartphone, porque why the hell not anyway
+
     1.1. Partes mais importantes:
     Resolver o problema de storage das informações que eu colocar
 
