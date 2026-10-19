@@ -11,8 +11,8 @@ O que foi feito até agora:
 
 Agora, vamos para o Design mais desenvolvido, pronto para abarcar novas features e com mais direcionamento. Observar [Design novo](./imgs/homepage-newdesign-rough-1.jpg)
 
-2. Colocar por escrito partes mais importantes do projeto & adicionais divertidos
-    0. Estrutura do site: 
+1. Colocar por escrito partes mais importantes do projeto & adicionais divertidos
+    1. Estrutura do site: 
         - Uma visão panorâmica que dá para usar fullscreen normal
         - Uma visão de box para ver no meu Noctalia Niri
         - Uma visão de smartphone, porque why the hell not anyway
@@ -25,6 +25,7 @@ Agora, vamos para o Design mais desenvolvido, pronto para abarcar novas features
     - Fazer o céu mudar de acordo com a hora do dia: manhã, meio-dia, entardecer, noite. 
         (Possível easter egg de Lua Sangrenta e Eclipses Solares e Lunares)
     - Adicionar gamification, com personagem, niveis, quests etc
+    - Melhorar o sisteminha de quotes, para aparecer uma quote random de 6-9, com uma "shelf" abaixo mostrando meus livros favoritos 
 
     1.3 Estético, opcional:
     - Coração no final da tela
